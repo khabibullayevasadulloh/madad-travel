@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4B5583;
+    --primary-light-color: #7587B3;
+    --primary-dark-color: #29314B;
+    --secondary-color: #F5F5F5;
+    --secondary-light-color: #F9F9F9;
+    --secondary-dark-color: #D3D3D3;
+    --text-color: #4B5583;
+    --text-light-color: #7587B3;
+    --text-dark-color: #29314B;
+    --background-color: #F5F5F5;
+    --background-light-color: #F9F9F9;
+    --background-dark-color: #D3D3D3;
+    --hover-color: #7587B3;
+
+    /* --box-shadow:  */
+    /* --primary-transition */
+}
+
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    width: 200px;
+}
+
+header .fa-bars {
+    display: none;
+    text-align: end;
+}
+
+header nav ul li {
+    cursor: pointer;
+    color: #4B5583;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header nav ul li:hover {
+    color: #000;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main .hero-section {
+    min-height: 70vh;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .title {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+}
+
+main .title h1 {
+    color: #0A2472;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+
+main .title p {
+    color: #4B5583;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+button {
+    margin-top: 40px;
+    display: block;
+    background-color: #0A2472;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main .title button {
+    background-color: #0A2472;
+    color: #ffffff;
+    border: none;
+    padding: 16px 32px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main .map img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    header .fa-bars {
+        display: flex;
+        align-items: center;
+        padding-left: 160px;
+        font-size: 24px;
+        color: #000;
+    }
+
+    main .map img {
+        width: 100%;
+        display: none;
+    }
+}
